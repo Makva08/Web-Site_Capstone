@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+  <title>AgroLand Project</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="#"><span>SmartRad</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#about">Map</a></li>
+          <li class="active"><a href="#services">Solution</a></li>
+          <li><a href="#services">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Solution</h2>
+        </div>
+
+        <ul class="faq-list">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <img src="static/assets/img/structure.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8" data-aos="zoom-in" data-aos-delay="100"></div>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <div id="faq1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  We made it possible for anyone to monitor the level of radiation on the location of his/her device from any place in the world. To implement that, we created a web server that receives data from devices. Some of the devices are completely autonomous and require no external power source (power will be provided by solar panel). Others are handheld and can be carried in the pocket. Devices are able to receive updates from the server, if software correction is needed. 
+                </p>
+              </div>
+            </li>
+          </div>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+        <ul class="faq-list">
+
+          <div class="col-lg-7" data-aos="zoom-in" data-aos-delay="100">
+            <img src="static/assets/img/schematic.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="100"></div>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <div id="faq1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  First, we were planning to use NE555 as the heart of our circuit, as it is a pulse generator IC. However, after its first testing and then looking up the internet, we decided to use the MC34063 chip, which is a DC/DC converter that is used to obtain the necessary high voltage from a low battery one. Its main advantage over simple microchip NE555 or similar pulse generators is that it can control the output voltage and adjusts the parameters of capacitors and resistors to make it stable. Then we decided to use power MOSFET which has big drain-source breakdown voltage and works on high frequencies. It is getting pulses and working as a switch. Then, we decided to use a coil to feed our circuit with current. Next step was to choose timing capacitor, which also controls frequency and stabilizes voltage on the output. We have chosen those parameters by test method on the circuit you can observe on the picture below. Next, we decided to use diode and pnp transistor to defend our IC from the charges, collected on the gate of MOSFET. For diode, as we were working on high frequency, we used schottky diode. Lastly, we used voltage divider to provide negative feedback for IC and we used capacitor to stabilize voltage on tube.
+                </p>
+              </div>
+            </li>
+          </div>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+        <ul class="faq-list">
+          <div class="row">
+            <div class="col-lg-2" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="col-lg-8" data-aos="zoom-in" data-aos-delay="100">
+              <img src="static/assets/img/breadboard.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-2" data-aos="zoom-in" data-aos-delay="100"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <div id="faq1" class="collapse show" data-parent=".faq-list">
+                  <p>
+                    This is the first try of our schematic
+                  </p>
+                </div>
+              </li>
+            </div>
+          </div>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+        <ul class="faq-list">
+          <div class="row">
+            <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+              <img src="static/assets/img/ps1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-7" data-aos="zoom-in" data-aos-delay="100">
+              <img src="static/assets/img/ps2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="100"></div>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <div id="faq1" class="collapse show" data-parent=".faq-list">
+                  <p>
+                    we have built a voltage-controlled power supply based on Voltage regulator LM350, which varies its voltage between 1-19 volts. With this device we are going to power our peripherial modules and use it for further development of our project.
+                  </p>
+                </div>
+              </li>
+            </div>
+          </div>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+        <ul class="faq-list">
+          <div class="row">
+            <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+              <img src="static/assets/img/gps1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-7" data-aos="zoom-in" data-aos-delay="100">
+              <img src="static/assets/img/gps2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="100"></div>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <div id="faq1" class="collapse show" data-parent=".faq-list">
+                  <p>
+                    We have programmed a GPS module module which works on NMEA protocol, so that it shows the exact location of the device.
+                  </p>
+                </div>
+              </li>
+            </div>
+          </div>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+        <ul class="faq-list">
+          <div class="row">
+            <div class="col-lg-2" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="col-lg-10" data-aos="zoom-in" data-aos-delay="100">
+              <img src="static/assets/img/gsm.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="col-lg-10" data-aos="zoom-in" data-aos-delay="100">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <div id="faq1" class="collapse show" data-parent=".faq-list">
+                  <p>
+                    We have set up our GSM module so that it can send and receive messages and calls
+                  </p>
+                </div>
+              </li>
+            </div>
+          </div>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+        <ul class="faq-list">
+          <div class="row">
+            <div class="col-lg-2" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="col-lg-8" data-aos="zoom-in" data-aos-delay="100">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <div id="faq1" class="collapse show" data-parent=".faq-list">
+                  <p>
+                    We have set up the TTGO, which will be included on one (handheld) options:
+                  </p>
+                </div>
+              </li>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="col-lg-9" data-aos="zoom-in" data-aos-delay="100">
+              <img src="static/assets/img/ttgo.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>SmartRad</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
+        Designed by <a href="https://bootstrapmade.com/">Jengiz Pataraia</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+</html>
